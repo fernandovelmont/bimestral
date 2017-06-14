@@ -13,13 +13,33 @@ and open the template in the editor.
    <link rel="stylesheet" href="css/bootstrap.css">
     </head>
     <body>
-        <!--hasta abajo del body se carga-->
         <h1> FERNANDO DANIEL </h1>
         <div id="algo"></div>
         <button id="boton1" class="btn btn-primary">Mi primer boton</button>
+        <h2> Oprime el boton para guardar una direccion </h2>
+        <input type="text" placeholder="numero" id="numero">
+        <input type="text" placeholder="calle"  id="calle">
+         <input type="text" placeholder="cp" id="cp"> 
+          <input type="text" placeholder="municipio" id="municipio">
+        <button id="guardarDireccion" class="btn btn-danger">Guardar direccion </button>
+        
+        <h2>Seccion 2 buscar por id,actualizar y borrar </h2>
+        <button id="buscarPorId" class="btn btn-success">Buscar por id </button>
+        <br>
+        <input type="text" placeholder="id" id="id">
+        <input type="text" placeholder="numero" id="numero2">
+        <input type="text" placeholder="calle"  id="calle2">
+         <input type="text" placeholder="cp" id="cp2"> 
+          <input type="text" placeholder="municipio" id="municipio2">
+          <br>
+          <button id="actualizar" class="btn btn-primary">Actualizar</button>
+          <button id="borrar" class="btn btn-danger">Borrar</button>
+          
+        <!--hasta abajo del body se carga-->
         <script src="js/jquery.js"></script>
         <script src="js/tether.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/primero.js"></script>
+        <script src="js/direccion.js"></script>
     </body>
 </html>
