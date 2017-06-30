@@ -18,10 +18,17 @@ $("#guardarDireccion").click(function(){
     );
     
 $("#buscarPorId").click(function(){
-    //Aplicamos el metodo post usando la uri del servicio
-   var id=$("#id").val();
-   $.get("direccion/"+id,function(json){
-        console.log(json.municipio);
-    });
-}
-);
+            //Aplicamos el metodo post usando la uri del servicio
+            var id=$("#id").val();
+      
+            
+          $.get("direccion/"+id,function(json){
+              console.log(json.municipio,json.calle);
+              $("#numero2").val(json.numero);
+              $("#calle2").val(json.calle);
+              $("#cp2").val(json.cp);
+              $("#municipio2").val(json.municipio);
+               })  ;
+            
+           }
+        );
